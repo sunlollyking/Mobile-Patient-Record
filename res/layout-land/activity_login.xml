@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_orange_fade_test1"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="top"
+    tools:context="com.chrisdixon.mobilepatientrecord.LoginActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <ImageView
+        android:id="@+id/medicationImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bloodTypeImage"
+        android:layout_alignTop="@+id/passwordBox"
+        android:adjustViewBounds="true"
+        android:maxWidth="45dp"
+        android:src="@drawable/padlock" />
+
+    <TextView
+        android:id="@+id/loginTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/userIdentificationBox"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="e-Mergency Login Screen"
+        android:textColor="#007AA3"
+        android:textColorLink="@android:color/holo_blue_dark"
+        android:textSize="35sp" />
+
+    <ImageView
+        android:id="@+id/personImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/userIdentificationBox"
+        android:layout_marginBottom="20dp"
+        android:layout_toRightOf="@+id/userIdentificationBox"
+        android:adjustViewBounds="true"
+        android:baselineAlignBottom="false"
+        android:maxHeight="155dp"
+        android:maxWidth="155dp"
+        android:src="@drawable/icon" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/passwordBox"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button"
+        android:text="Login"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/passwordBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/loginButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:textColor="@android:color/black"
+        android:textColorHint="#007AA3"
+        android:textColorLink="#007AA3" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/userIdentificationBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/passwordBox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        android:ems="10"
+        android:fitsSystemWindows="true"
+        android:hint="Enter User Identification"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textColorHint="#007AA3"
+        android:textColorLink="#007AA3" 
+        />
+
+    <ImageView
+        android:id="@+id/bloodTypeImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/userIdentificationBox"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="18dp"
+        android:layout_toLeftOf="@+id/passwordBox"
+        android:adjustViewBounds="true"
+        android:maxWidth="45dp"
+        android:src="@drawable/id_blue" />
+
+</RelativeLayout>

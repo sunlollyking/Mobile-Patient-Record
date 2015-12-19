@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mobilepatientrecord"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAPTURE_AUDIO_OUTPUT" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.chrisdixon.mobilepatientrecord.LoginActivity"
+            android:label="e-Mergency Mobile Patient Record" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.chrisdixon.mobilepatientrecord.SelectPatientActivity"
+            android:label="Patient Search"
+            android:parentActivityName="com.chrisdixon.mobilepatientrecord.LoginActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mobilepatientrecord.LoginActivity" />
+        </activity>
+        <activity
+            android:name="com.chrisdixon.mobilepatientrecord.ShowPatientActivity"
+            android:label="List Of Patients"
+            android:parentActivityName="com.chrisdixon.mobilepatientrecord.SelectPatientActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mobilepatientrecord.SelectPatientActivity" />
+        </activity>
+        <activity
+            android:name="com.chrisdixon.mobilepatientrecord.PatientRecordsActivity"
+            android:label="Patient&apos;s Records"
+            android:parentActivityName="com.chrisdixon.mobilepatientrecord.ShowPatientActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mobilepatientrecord.ShowPatientActivity" />
+        </activity>
+        <activity
+            android:name="com.chrisdixon.mobilepatientrecord.PhotoAndAudioForHospital"
+            android:label="Identify And Describe Patient" >
+        </activity>
+        <activity
+            android:name="com.chrisdixon.mobilepatientrecord.SelectHospitalActivity"
+            android:label="Select A Suitable Hospital" >
+        </activity>
+        <activity
+            android:name="com.chrisdixon.mobilepatientrecord.UserLogActivity"
+            android:label="Detailed Account Of User Log" >
+        </activity>
+        <activity
+            android:name="com.chrisdixon.mobilepatientrecord.ShowMedicationActivity"
+            android:label="Patient&apos;s Medication" >
+        </activity>
+        <activity
+            android:name="com.chrisdixon.mobilepatientrecord.ShowMedicalHistoryActivity"
+            android:label="Patient&apos;s Medical History" >
+        </activity>
+        <activity
+            android:name="com.chrisdixon.mobilepatientrecord.ShowHistoryActivity"
+            android:label="@string/title_activity_show_history" >
+        </activity>
+        <activity
+            android:name="com.chrisdixon.mobilepatientrecord.ShowAllergyActivity"
+            android:label="Patient&apos;s Allergies" >
+        </activity>
+        <activity
+            android:name="com.chrisdixon.mobilepatientrecord.ShowPatientFamilyHistoryActivity"
+            android:label="Patient&apos;s Family History" >
+        </activity>
+        <activity
+            android:name="com.chrisdixon.mobilepatientrecord.ShowConcernsActivity"
+            android:label="Medical Concerns With Patient" >
+        </activity>
+        <activity
+            android:name="com.chrisdixon.mobilepatientrecord.SentPatient"
+            android:label="Patient Successfully Sent" >
+        </activity>
+        <activity
+            android:name="com.chrisdixon.mobilepatientrecord.MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name="com.chrisdixon.mobilepatientrecord.CallEmergencyServicesActivity"
+            android:label="Dial An Emergency Service" >
+        </activity>
+        <activity
+            android:name="com.chrisdixon.mobilepatientrecord.UserManualActivity"
+            android:label="@string/title_activity_user_manual" >
+        </activity>
+    </application>
+
+</manifest>

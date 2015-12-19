@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/usernameLogItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="67dp"
+        android:text="@string/textview"
+        android:textColor="#007AA3"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/log_log_item"
+        android:layout_width="190dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/usernameLogItem"
+        android:layout_marginRight="43dp"
+        android:text="@string/textview"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/currentTD_log_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/log_log_item"
+        android:layout_alignLeft="@+id/log_log_item"
+        android:layout_marginBottom="7dp"
+        android:text="@string/textview"
+        android:textSize="12sp" />
+
+</RelativeLayout>

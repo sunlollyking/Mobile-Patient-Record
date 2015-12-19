@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+   android:background="@drawable/background_orange_fade_test1"
+    tools:context="com.chrisdixon.mobilepatientrecord.ShowPatientFamilyHistoryActivity" >
+
+    <ListView
+        android:id="@+id/show_patient_family_list_item"
+        android:layout_width="match_parent"
+        android:layout_height="430dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="60dp"
+        android:divider="#007AA3"
+        android:dividerHeight="3dp" >
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/FamilyHistoryTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/show_patient_family_list_item"
+        android:layout_alignParentTop="true"
+        android:text="Patient&apos;s Family History:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="22sp" />
+    <Button
+        android:id="@+id/goBack"
+        style="@drawable/button"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/show_patient_family_list_item"
+        android:layout_marginRight="7dp"
+        android:background="@drawable/button"
+        android:text="Go Back" />
+
+    <TextView
+        android:id="@+id/patientConcernsDateRaisedListItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/goBack"
+        android:layout_marginRight="62dp"
+        android:text="User Logged In As:" />
+
+    <TextView
+        android:id="@+id/userLoggedInShowFamilyHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/patientConcernsDateRaisedListItem"
+        android:layout_alignBottom="@+id/patientConcernsDateRaisedListItem"
+        android:layout_alignRight="@+id/goBack"
+        android:textColor="#1CCC35"
+        android:text="TextView" />
+
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/callEmergencyServicesLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_orange_fade_test1"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.chrisdixon.mobilepatientrecord.CallEmergencyServicesActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Notify An Emergency Service"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#007AA3" />
+
+    <Button
+        android:id="@+id/dialFire"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/button"
+        android:text="Fire Dept." />
+
+    <Button
+        android:id="@+id/dialTransplant"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dialPolice"
+        android:layout_centerVertical="true"
+        android:background="@drawable/button"
+        android:text="Blood/Organs" />
+
+    <Button
+        android:id="@+id/dialCoastguard"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dialTransplant"
+        android:layout_below="@+id/dialSearchAndRescue"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/button"
+        android:text="Coastguard" />
+
+    <Button
+        android:id="@+id/dialPolice"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/dialFire"
+        android:layout_alignBottom="@+id/dialFire"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="19dp"
+        android:background="@drawable/button"
+        android:text="Police" />
+
+    <Button
+        android:id="@+id/dialMilitary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/dialCoastguard"
+        android:layout_alignBottom="@+id/dialCoastguard"
+        android:layout_alignLeft="@+id/dialFire"
+        android:background="@drawable/button"
+        android:text="Military" />
+
+    <Button
+        android:id="@+id/dialSearchAndRescue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dialFire"
+        android:layout_alignTop="@+id/dialTransplant"
+        android:background="@drawable/button"
+        android:text="Search And Rescue" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="19dp"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/dialCoastguard"
+        android:text="Logged In As:" />
+
+    <TextView
+        android:id="@+id/callEmergencyServicesUserLogged"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignRight="@+id/dialFire"
+        android:text="TextView" />
+
+</RelativeLayout>

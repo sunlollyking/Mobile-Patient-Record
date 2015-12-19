@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_orange_fade_test1"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/patient_list"
+        android:layout_width="match_parent"
+        android:layout_height="399dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="65dp"
+        android:layout_weight="0.10"
+        android:divider="#007AA3"
+        android:dividerHeight="2dp" >
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/showPatientTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/select_a_patient_from_the_list"
+        android:textColor="#007AA3"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/dateStartedDrug"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/showPatientTitle"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/logged_in_as_" />
+
+    <TextView
+        android:id="@+id/userLoggedInShowPatient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/dateStartedDrug"
+        android:layout_alignBottom="@+id/dateStartedDrug"
+        android:layout_alignRight="@+id/organDonor"
+        android:layout_marginRight="35dp"
+        android:text="@string/textview"
+        android:textColor="#1CCC35" />
+
+    <ImageView
+        android:id="@+id/organDonor"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/person"
+        android:src="@drawable/person" />
+
+</RelativeLayout>

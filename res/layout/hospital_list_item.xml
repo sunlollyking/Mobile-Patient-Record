@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/hospitalName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="39dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/title_select_hospital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/hospitalName"
+        android:layout_alignBottom="@+id/hospitalName"
+        android:layout_marginLeft="46dp"
+        android:layout_toRightOf="@+id/hospitalName"
+        android:text="Metres From Location"
+        android:textColor="#007AA3" />
+
+    <TextView
+        android:id="@+id/distanceFromHere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/title_select_hospital"
+        android:layout_below="@+id/title_select_hospital"
+        android:layout_marginTop="21dp"
+        android:text="TextView"
+        android:textColor="#007AA3" />
+
+</RelativeLayout>

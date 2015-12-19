@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+  android:background="@drawable/background_orange_fade_test1"
+    tools:context="com.chrisdixon.mobilepatientrecord.SelectPatient"
+    tools:ignore="MergeRootFrame" >
+
+    <ImageView
+        android:id="@+id/bloodTypeImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/houseNo"
+        android:layout_alignLeft="@+id/searchButton"
+        android:adjustViewBounds="true"
+        android:maxWidth="40dp"
+        android:src="@drawable/person" />
+
+    <EditText
+        android:id="@+id/houseNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/personName"
+        android:layout_below="@+id/personName"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/house_number"
+        android:inputType="number"
+        android:textColorHint="#007AA3"
+        android:textColorLink="#007AA3" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/personName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bloodTypeImage"
+        android:layout_below="@+id/title_select_hospital"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/full_name"
+        android:inputType="textPersonName|textAutoComplete"
+        android:textColorHint="#007AA3"
+        android:textColorLink="#007AA3" />
+
+    <EditText
+        android:id="@+id/postcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/houseNo"
+        android:layout_below="@+id/houseNo"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/postcode"
+        android:textColorHint="#007AA3"
+        android:textColorLink="#007AA3" />
+
+    <Button
+        android:id="@+id/searchButton"
+        style="@drawable/button_disabled"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="23dp"
+        android:layout_toRightOf="@+id/loginTitle"
+        android:background="@drawable/button_disabled"
+        android:text="@string/enter_at_least_2_boxes" />
+
+    <ImageView
+        android:id="@+id/personImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="33dp"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        android:maxHeight="100dp"
+        android:maxWidth="100dp"
+        android:src="@drawable/search" />
+
+    <TextView
+        android:id="@+id/loginTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="11dp"
+        android:gravity="center"
+        android:text="@string/patient_search"
+        android:textColor="#007AA3"
+        android:textColorHint="#007AA3"
+        android:textColorLink="#007AA3"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/title_select_hospital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/loginTitle"
+        android:layout_below="@+id/loginTitle"
+        android:text="@string/type_details_into_boxes"
+        android:textColor="#007AA3"
+        android:textColorHint="#007AA3"
+        android:textColorLink="#007AA3" />
+
+    <TextView
+        android:id="@+id/usernameLogItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/title_select_hospital"
+        android:layout_alignTop="@+id/userLoggedIn"
+        android:text="@string/logged_in_as_" />
+
+    <TextView
+        android:id="@+id/userLoggedIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/title_select_hospital"
+        android:layout_marginBottom="8dp"
+        android:text="@string/textview"
+        android:textColor="#1CCC35" />
+
+</RelativeLayout>

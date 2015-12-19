@@ -1,0 +1,196 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/patientRecordsActivityLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_grid_lines_portrait_blue_less_satuation" >
+
+    <TextView
+        android:id="@+id/title_select_hospital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/name_"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/setName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/title_select_hospital"
+        android:text="@string/setname"
+        android:textColor="#007AA3"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/logged_in_as" />
+
+    <TextView
+        android:id="@+id/userLoggedInPatientRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/medicationTextView"
+        android:text="@string/username" />
+
+    <ImageView
+        android:id="@+id/doctorConcernImg"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_above="@+id/userLoggedInPatientRecord"
+        android:layout_alignLeft="@+id/allergies"
+        android:layout_marginBottom="33dp"
+        android:contentDescription="@string/doctor_concerns_image"
+        android:src="@drawable/doctor" />
+
+    <TextView
+        android:id="@+id/doctorConcernT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/medHistoryView"
+        android:layout_alignTop="@+id/doctorConcernImg"
+        android:layout_marginTop="15dp"
+        android:text="@string/doctor_s_concerns"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/bloodTypeImage"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_alignBottom="@+id/personImage"
+        android:layout_alignRight="@+id/textView9"
+        android:contentDescription="@string/blood_type_image"
+        android:src="@drawable/bloodtype" />
+
+    <ImageView
+        android:id="@+id/personImage"
+        android:layout_width="180dp"
+        android:layout_height="150dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/default_person_picture"
+        android:src="@drawable/person" />
+
+    <TextView
+        android:id="@+id/bloodType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/bloodTypeImage"
+        android:layout_marginTop="9dp"
+        android:layout_toRightOf="@+id/bloodTypeImage"
+        android:text="@string/n_a"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/fMedHistoryView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/fMedHistImage"
+        android:layout_alignLeft="@+id/medicationTextView"
+        android:layout_marginBottom="13dp"
+        android:text="@string/family_medical_history"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/allergies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/personImage"
+        android:layout_marginTop="26dp"
+        android:layout_toLeftOf="@+id/imageFlower"
+        android:text="@string/allergies"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/imageFlower"
+        android:layout_width="60dp"
+        android:layout_height="55dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/personImage"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="18dp"
+        android:contentDescription="@string/flower_image"
+        android:src="@drawable/flower" />
+
+    <TextView
+        android:id="@+id/medicationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/allergies"
+        android:layout_alignBottom="@+id/allergies"
+        android:layout_alignRight="@+id/bloodType"
+        android:layout_marginRight="14dp"
+        android:text="@string/medication"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/medicationImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/imageFlower"
+        android:layout_toRightOf="@+id/medicationTextView"
+        android:contentDescription="@string/medication_image"
+        android:src="@drawable/drug" />
+
+    <TextView
+        android:id="@+id/medHistoryViewText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/medHistoryView"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="11dp"
+        android:layout_toRightOf="@+id/setName"
+        android:text="@string/medical_history"
+        android:textSize="22sp" />
+
+    <ImageView
+        android:id="@+id/fMedHistImage"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/allergies"
+        android:layout_below="@+id/imageFlower"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="24dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/family_history_image"
+        android:maxHeight="50dp"
+        android:src="@drawable/family" />
+
+    <ImageView
+        android:id="@+id/medHistoryView"
+        android:layout_width="75dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/fMedHistoryView"
+        android:layout_marginTop="25dp"
+        android:layout_toLeftOf="@+id/medicationImage"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/pharmacy_cross_"
+        android:src="@drawable/firstaid" />
+
+    <TextView
+        android:id="@+id/patientResuscitate"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_select_hospital"
+        android:layout_marginTop="18dp"
+        android:text="@string/medium_text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="17sp" />
+
+    <ImageView
+        android:id="@+id/organDonation"
+        android:layout_width="39dp"
+        android:layout_height="40dp"
+        android:layout_alignRight="@+id/medicationImage"
+        android:layout_alignTop="@+id/patientResuscitate"
+        android:contentDescription="@string/pharmacy_cross_"
+        android:src="@drawable/transparent2" />
+
+</RelativeLayout>

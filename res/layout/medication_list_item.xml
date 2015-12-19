@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="15dp" >
+
+    <TextView
+        android:id="@+id/dateStartedDrug"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="70dp"
+        android:text="TextView"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/dateFinishedDrug"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dateStartedDrug"
+        android:layout_below="@+id/dateStartedDrug"
+        android:text="TextView"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/drugName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/dateStartedDrug"
+        android:text="TextView"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/drugDosage"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/dateStartedDrug"
+        android:layout_alignBottom="@+id/dateStartedDrug"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/drugName"
+        android:text="TextView"
+        android:textSize="14dp" />
+
+</RelativeLayout>
